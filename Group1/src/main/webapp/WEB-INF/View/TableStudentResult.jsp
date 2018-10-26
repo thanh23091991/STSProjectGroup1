@@ -45,12 +45,12 @@
 					<tr>
 						<th scope="col">Mã SV</th>
 						<th scope="col">Tên SV</th>
-						<th scope="col">Model</th>
-						<th scope="col">Year</th>
-						<th scope="col">Color</th>
-						<th scope="col">Note</th>
-						<th scope="col">Update</th>
-						<th scope="col">Delete</th>
+						<th scope="col">Giới tính</th>
+						<th scope="col">Ngày sinh</th>
+						<th scope="col">Quê quán</th>
+						<th scope="col">Mã lớp</th>
+						<th scope="col">Cập nhật</th>
+						<th scope="col">Xóa</th>
 					</tr>
 				</thead>
 				<tbody>
