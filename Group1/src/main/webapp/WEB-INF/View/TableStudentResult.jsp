@@ -4,15 +4,16 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Point Manager</title>
+<title>Page Title</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 <link rel="stylesheet" type="text/css" media="screen"
 	href="css/bootstrap.min.css" />
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/ajax.js"></script>
 </head>
+
 <body>
 <div class="alert "
                 style="width: 180px; float: right; margin-bottom: 15px;padding-left:20px; height:100px">
@@ -23,15 +24,10 @@
                     style=" ">Logout</button></a>
             </div>
 	<center>
-		<!-- Header -->
-		<div class="header">
-			
-		</div>
 		
-		<!-- END Header -->
 		<div class="container">
 
-			<h3>Point Manager</h3>
+			<h3>Table Car</h3>
 			<h4>
 				<c:out value="${deletedMsg}" />
 			</h4>
@@ -41,45 +37,74 @@
 			<h4>
 				<c:out value="${insertedMsg}" />
 			</h4>
-<<<<<<< HEAD
-<<<<<<< HEAD
 			<a href="${pageContext.request.contextPath}/CarInsert.jsp"><button
-=======
-			<a href="insPoint"><button
->>>>>>> branch 'master' of https://github.com/thanh23091991/STSProjectGroup1.git
-=======
-			<a href="${pageContext.request.contextPath}/CarInsert.jsp"><button
->>>>>>> branch 'master' of https://github.com/thanh23091991/STSProjectGroup1.git
 					class="btn btn-outline-primary" value="Insert"
 					style="float: left; margin-bottom: 5px">Insert</button></a>
 			<table class="table table-hover table-bordered">
 				<thead>
 					<tr>
-						<th scope="col">Student ID</th>
-						<th scope="col">Subject ID</th>
-						<th scope="col">Semester</th>
-						<th scope="col">First Point</th>
-						<th scope="col">Second Point</th>
-						<th scope="col">Update</th>
-						<th scope="col">Delete</th>
+						<th scope="col">Mã SV</th>
+						<th scope="col">Tên SV</th>
+						<th scope="col">Giới tính</th>
+						<th scope="col">Ngày sinh</th>
+						<th scope="col">Quê quán</th>
+						<th scope="col">Mã lớp</th>
+						<th scope="col">Cập nhật</th>
+						<th scope="col">Xóa</th>
 					</tr>
 				</thead>
 				<tbody>
-					<c:forEach items="${pointList}" var="point">
+					<c:forEach items="${carList}" var="car">
 						<tr>
-							<td><c:out value="${point.maSV}" /></td>
-							<td><c:out value="${point.maMH}" /></td>
-							<td><c:out value="${point.hocKy}" /></td>
-							<td><c:out value="${point.diemLan1}" /></td>
-							<td><c:out value="${point.diemLan2}" /></td>
+							<td><c:out value="${car.carId}" /></td>
+							<td><c:out value="${car.maker}" /></td>
+							<td><c:out value="${car.model}" /></td>
+							<td><c:out value="${car.year}" /></td>
+							<td><c:out value="${car.color}" /></td>
+							<td><c:out value="${car.note}" /></td>
 							<td><a
-								href="${pageContext.request.contextPath}/updateCarById?carId=${point.maSV}"><button
+								href="${pageContext.request.contextPath}/updateCarById?carId=${car.carId}"><button
 										class="btn btn-success" value="Update">Update</button></a></td>
 							<td><a
 								href="${pageContext.request.contextPath}/deleteCarById?carId=${car.carId}"><button
 										class="btn btn-danger" value="Delete">Delete</button></a></td>
 						</tr>
 					</c:forEach>
+				</tbody>
+			</table>
+			<h3>Table Customer</h3>
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">CustomerID</th>
+						<th scope="col">Name</th>
+						<th scope="col">Phone</th>
+						<th scope="col">Email</th>
+						<th scope="col">Address</th>
+						<th scope="col">Note</th>
+					</tr>
+				</thead>
+				<tbody id="customer">
+				</tbody>
+			</table>
+			<h3>Table Order</h3>
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">OrderID</th>
+						<th scope="col">CustomerID</th>
+						<th scope="col">CarID</th>
+						<th scope="col">Amount</th>
+						<th scope="col">SalePrice</th>
+						<th scope="col">OrderDate</th>
+						<th scope="col">DeliveryAddress</th>
+						<th scope="col">Status</th>
+						<th scope="col">Note</th>
+					</tr>
+				</thead>
+				<tbody id="order">
 				</tbody>
 			</table>
 		</div>

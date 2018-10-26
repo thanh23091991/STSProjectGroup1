@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.studentmanager.entity.MonHoc;
-import com.studentmanager.service.StudentRepository;
 import com.studentmanager.service.SubjectRepository;
 
 @Controller
