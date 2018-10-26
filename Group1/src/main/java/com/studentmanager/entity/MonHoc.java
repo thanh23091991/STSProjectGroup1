@@ -59,4 +59,19 @@ public class MonHoc {
 		this.listDiem = listDiem;
 	}
 	
+	
+	
+	
+	
+	public MonHoc(String maMH, String tenMH, int soTrinh) {
+		this.maMH = maMH;
+		this.tenMH = tenMH;
+		this.soTrinh = soTrinh;
+	}
+
+	@Override
+	public String toString() {
+		return "MonHoc [MaMH=" + this.maMH + ", TenMH=" + this.tenMH + ", SoTrinh=" + this.soTrinh + "]";
+	}
+	
 }

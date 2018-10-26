@@ -41,7 +41,15 @@
 			<h4>
 				<c:out value="${insertedMsg}" />
 			</h4>
+<<<<<<< HEAD
+<<<<<<< HEAD
 			<a href="${pageContext.request.contextPath}/CarInsert.jsp"><button
+=======
+			<a href="insPoint"><button
+>>>>>>> branch 'master' of https://github.com/thanh23091991/STSProjectGroup1.git
+=======
+			<a href="${pageContext.request.contextPath}/CarInsert.jsp"><button
+>>>>>>> branch 'master' of https://github.com/thanh23091991/STSProjectGroup1.git
 					class="btn btn-outline-primary" value="Insert"
 					style="float: left; margin-bottom: 5px">Insert</button></a>
 			<table class="table table-hover table-bordered">
