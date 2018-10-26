@@ -1,30 +1,30 @@
 package com.studentmanager.controller;
 
-<<<<<<< Upstream, based on origin/master
+
 import java.util.ArrayList;
 import java.util.List;
-=======
+
 import java.util.Optional;
->>>>>>> 01a4a03 Dung commit
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-<<<<<<< Upstream, based on origin/master
-=======
+
+
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
->>>>>>> 01a4a03 Dung commit
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-<<<<<<< Upstream, based on origin/master
+
 import com.studentmanager.entity.Diem;
 import com.studentmanager.service.DiemRepository;
-=======
+
 import com.studentmanager.entity.SinhVien;
 import com.studentmanager.service.SinhVienRepository;
->>>>>>> 01a4a03 Dung commit
+
 
 @Controller
 public class HomeController {
@@ -45,23 +45,22 @@ public class HomeController {
 	public String getClasses() {
 		return "Classes";
 	}
-<<<<<<< Upstream, based on origin/master
+
 	@RequestMapping(value = "/point", method = RequestMethod.GET)
 	public String getPoints(Model model) {
 		List<Diem> diems = new ArrayList<Diem>();
 		diems = diemRepository.findAll();
 		model.addAttribute("pointList", diems);
-		
-=======
+		return "Point";
+		}
+
 
 	@RequestMapping(value = "/point", method = RequestMethod.POST)
 	public String getPoint() {
->>>>>>> 01a4a03 Dung commit
 		return "Point";
 	}
-<<<<<<< Upstream, based on origin/master
 	
-=======
+
 
 	// Mapping table SinhVien
 	@Autowired
@@ -120,5 +119,5 @@ public class HomeController {
 		return "sinhVien-list";
 	}
 
->>>>>>> 01a4a03 Dung commit
+
 }
