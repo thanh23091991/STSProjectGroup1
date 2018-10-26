@@ -41,7 +41,7 @@
 			<h4>
 				<c:out value="${insertedMsg}" />
 			</h4>
-			<a href="insPoint"><button
+			<a href="${pageContext.request.contextPath}/CarInsert.jsp"><button
 					class="btn btn-outline-primary" value="Insert"
 					style="float: left; margin-bottom: 5px">Insert</button></a>
 			<table class="table table-hover table-bordered">
