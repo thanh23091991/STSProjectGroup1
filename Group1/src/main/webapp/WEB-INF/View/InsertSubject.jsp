@@ -17,13 +17,11 @@
 
 <center>
 		<div class="container">
-			<form action="${pageContext.request.contextPath}/insertCar" method="post" class="form">
+			<form action="${pageContext.request.contextPath}/doinsertCar" method="post" class="form">
 			<h3>Insert Car</h3>
-			Maker <input name="maker" class="form-control" type=text />
-			Model <input name="model" class="form-control" type=text/> 
-			Year <input name="year" class="form-control" type=text />
-			Color <input name="color" class="form-control" type=text  />
-	        Note <input name="note" class="form-control" type=text  />
+			MaMH <input name="maMH" class="form-control" type=text />
+			TenMH <input name="tenMH" class="form-control" type=text/> 
+			SoTrinh <input name="sotrinh" class="form-control" type=text />
 	        <div>
 	        	<p name="alert" style="color: red">
 					<c:out value="${insertMsg}" />

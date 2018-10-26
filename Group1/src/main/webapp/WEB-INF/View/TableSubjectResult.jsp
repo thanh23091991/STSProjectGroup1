@@ -23,7 +23,7 @@
 			<h4>
 				<c:out value="${insertedMsg}" />
 			</h4>
-			<a href="${pageContext.request.contextPath}/InsertSubject.jsp"><button
+			<a href="insSubInfo"><button
 					class="btn btn-outline-primary" value="Insert">Insert</button></a>
 			<table class="table table-hover table-bordered">
 				<thead>

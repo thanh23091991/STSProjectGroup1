@@ -35,6 +35,19 @@ public class Diem implements Serializable {
 	@Column(name = "DiemLan2", columnDefinition = "int", nullable = false)
 	private int diemLan2;
 
+	public Diem() {
+		super();
+	}
+
+	public Diem(String maSV, String maMH, int hocKy, int diemLan1, int diemLan2) {
+		super();
+		this.maSV = maSV;
+		this.maMH = maMH;
+		this.hocKy = hocKy;
+		this.diemLan1 = diemLan1;
+		this.diemLan2 = diemLan2;
+	}
+
 	public String getMaSV() {
 		return maSV;
 	}
